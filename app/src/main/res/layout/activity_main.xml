@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainActivity" >
+
+    <!--键盘是个  控件  我们需要时   填充布局进去  显示键盘 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/Etext_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00dfef"
+            android:layout_margin="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:hint="触摸弹出自定义xml键盘(构造方法1)"
+            />
+
+        <EditText
+            android:id="@+id/Etext_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:hint="触摸弹出自定义xml键盘2(构造方法2)"
+            android:background="#00dfef"
+            />
+    </LinearLayout>
+
+    <!-- 是用xml自定义键盘样式   使用KeyboardView键盘控件存放定义的键盘布局 -->
+
+    <include
+        layout="@layout/key_board_view"
+        />
+</FrameLayout>
