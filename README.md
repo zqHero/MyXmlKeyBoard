@@ -2009,3 +2009,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 源码链接：（基于AndroidStudio开发）
 CSDN:http://download.csdn.net/detail/u013233097/9490892
 Github:https://github.com/229457269/MyXmlKeyBoard
+
+
+
+如果对你有用欢迎    fork 和star
